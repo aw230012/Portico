@@ -196,3 +196,5 @@ FakesAssemblies/
 *.opt
 *.ncrunchsolution
 *.ncrunchproject
+*.suo
+*.cache
