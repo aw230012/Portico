@@ -1,0 +1,83 @@
+﻿@model IEnumerable<PorticoRegistration.Models.Patient>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+   @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+   <tr>
+      <th>
+         @Html.DisplayNameFor(model => model.LastName)
+      </th>
+      <th>
+         @Html.DisplayNameFor(model => model.Suffix)
+      </th>
+      <th>
+         @Html.DisplayNameFor(model => model.FirstName)
+      </th>
+      <th>
+         @Html.DisplayNameFor(model => model.MiddleName)
+      </th>
+      <th>
+         @Html.DisplayNameFor(model => model.DateOfBirth)
+      </th>
+      <th>
+         @Html.DisplayNameFor(model => model.SsnLastFour)
+      </th>
+      <th>
+         @Html.DisplayNameFor(model => model.EmailAddress)
+      </th>
+      <th>
+         @Html.DisplayNameFor(model => model.UserToken)
+      </th>
+      <th>
+         @Html.DisplayNameFor(model => model.UserSecret)
+      </th>
+      <th></th>
+   </tr>
+
+   @foreach (var item in Model)
+   {
+      <tr>
+         <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+         </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.Suffix)
+         </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+         </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.MiddleName)
+         </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.DateOfBirth)
+         </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.SsnLastFour)
+         </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.EmailAddress)
+         </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.UserToken)
+         </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.UserSecret)
+         </td>
+         <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+         </td>
+      </tr>
+   }
+
+</table>
+
+   
+
