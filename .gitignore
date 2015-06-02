@@ -198,3 +198,7 @@ FakesAssemblies/
 *.ncrunchproject
 *.suo
 *.cache
+_NCrunch_Portico/Portico.crunchsolution.cache
+PorticoRegistration/bin/PorticoRegistration.pdb
+PorticoRegistration/App_Data/PorticoRegistrationContext-20150601161023_log.ldf
+Portico.v12.suo
